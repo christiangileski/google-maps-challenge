@@ -1,29 +1,29 @@
 # Google Maps Challenge - Christian Gileski
 
-##How to run the service:
+## How to run the service:
 
 1. Make sure you have [Node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed on your machine. This project is a full-stack node project, utlizing Hapi for the server, axios for the routing, and React for the user interface.
 
-###If cloning from the git repository, go [here](https://github.com/christiangileski/google-maps-challenge), and follow these additional instructions before proceeding. If downloading the `.zip`, proceed to step five.
+### If cloning from the git repository, go [here](https://github.com/christiangileski/google-maps-challenge), and follow these additional instructions before proceeding. If downloading the `.zip`, proceed to step five.
 
 2. Clone the repository
 3. Run `npm install` from the console of your choosing (bash, terminal, etc.) while in the project folder to install all dependencies.
 4. Create a `.env` file and add the field `API_KEY` with your respective API key as the value.
 
-###API Key instructions
+### API Key instructions
 
 5. If you're running this from the submitted `.zip`, update the included `.env` which contains the `API_KEY` field to your own valid [Google API Key](https://developers.google.com/maps/documentation/javascript/get-api-key).
 6. Enable the Google Geocoding API for your project whose API key you'll be using by clicking the `Enable` button after selecting your project [here](https://console.developers.google.com/apis/library/geocoding-backend.googleapis.com). This is necessary to utilize the geocoding functionality.
 7. Enable the Google Maps API for your project whose API key you'll be using by clicking the `Enable` button after selecting your project [here](https://console.developers.google.com/apis/library/maps-backend.googleapis.com). This is necessary to use the map which is rendered to the React UI.
 
-###Additional instructions **ALL** users must follow to properly run the application
+### Additional instructions **ALL** users must follow to properly run the application
 
 8. Open *two* instances of your preferred console (bash, terminal, etc.) inside the project. One will host the server locally, the other will host the client locally.
 9. If you've already run `npm install` or downloaded the project from the `.zip`, you're ready for the next step. Otherwise, run `npm install` to install the necessary dependencies.
 10. On one console, run `npm run serve`. This will fire up the server on http://localhost:8333. The client is dependent on the server so run this first and make sure it starts succesfully. You will see a `Server running at:` message if successful.
 11. On the second console, run `npm run client`. This will fire up the user interface on http://localhost:3000. NOTE: This will run an unoptimized development client locally, and will automatically open a Chrome tab to the aforementioned address.
 
-##Features
+## Features
 
 - This application features an interactive Google map, as well as two textfields and three buttons, two of which retrieve information for the addresses in their respective text fields, and one to retrieve the distance between the two locations.
 
@@ -47,7 +47,7 @@
 
 - There's a `404` page with a redirect link to the homepage if the user manually enters an invalid URL in the browser's URL bar.
 
-###Why I find it interesting and what I believe I've done to enhance its interactivity
+### Why I find it interesting and what I believe I've done to enhance its interactivity
 
 - I believe adding an interactive Google Map to an otherwise simple distance-calculating app added much more to the user experience. The option to select an address directly from the map rather than being limited to only manually inputting the address adds a layer of complexity and depth that otherwise wouldn't be available.
 
@@ -63,7 +63,7 @@
     - Similar to above, adding a marker and re-centering the map after selecting to get information about one of the addresses is a small but cool feature to have, in my opinion.
     - Use of React and Material UI made for an aesthetically-pleasing interface, with components familiar to users.
 
-###Challenges faced while building this application
+### Challenges faced while building this application
 
 - I haven't worked much in Hapi 17, so the client-to-server routing was more challenging than I'm used to. Unfortunately I had to hard-code the server-side URL into the axios calls and enable cors on the server. In the past, I've been able to write helper functions which prevent the need for cors between client-side and servide-side api calls, and rather have the helper axios functions simply call, for example, `/api/geocode`.
 
@@ -71,6 +71,6 @@
 
 - I didn't write any unit or integration tests, those would've taken too much time, in my opinion.
 
-####Miscellaneous
+#### Miscellaneous
 
 The project was started using a duplicate of the repository I used to build my personal site. The repository for that can be found [here](https://github.com/christiangileski/personal-website). My personal site is hosted at http://www.christiangileski.me This project is built using react-scripts for the UI. As mentioned, running the client runs a non-optimized development build, and thus the initial load takes some time to bundle all of the code and start the client.
