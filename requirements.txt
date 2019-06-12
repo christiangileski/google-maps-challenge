@@ -1,0 +1,19 @@
+Please see the README for detailed instructions on how to run the application, features, the link to the repository, challenges faced, etc.
+
+Dependencies used in this project:
+
+Geolib (https://github.com/manuelbieh/geolib): MIT-licensed library for calculating the distance between two sets of geographic coordinates.
+
+Google Geocoding API (https://console.developers.google.com/apis/library/geocoding-backend.googleapis.com): The primary API of this challenge. This is the API used in gathering location information
+
+Google Maps API (https://console.developers.google.com/apis/library/maps-backend.googleapis.com): Granted me access to utilize a Google map for the user interface. NOTE: In addition to having to enable the Geocoding library/API for the project whose API key you'll be using, you will have to enable this library/API in order for the map to work correctly!
+
+Google Maps React (https://github.com/fullstackreact/google-maps-react): MIT-licensed library which allowed me to render and utilize a declarative Google Map as a React component. This made rendering a customizable map and conditional marker a total of <20 lines of code.
+
+Hapi (https://hapijs.com/): The framework I used to build this application. My personal choice compared to using Express.
+
+Material UI (https://material-ui.com/): React components that implement Google's Material Design. I used components such as Textfield, Button, Tooltip, Icon, Grid, etc. In addition, the withStyles element allows me to utilize the growingly-popular JSS (https://cssinjs.org/?v=v10.0.0-alpha.17) over conventional CSS.
+
+Numeral (http://numeraljs.com/): A javascript library for formatting and manipulating numbers. Used for readability improvements when calculating the distance between the two points
+
+React (https://reactjs.org/): The library I used to build the user interface.
